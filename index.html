@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		table {
+			margin: 1rem;
+			display: inline-block;
+		}
+
+		table,
+		tr,
+		td {
+			border: 1px solid #000;
+		}
+
+		table td {
+			width: 200px;
+			height: 200px;
+		}
+
+		.bg-color {
+			background-color: #DC143C;
+		}
+
+		.bg-img {
+			background-image: url("https://picsum.photos/200/200/?random=1");
+
+		}
+
+		.bg-repeat-x {
+			background-image: url("https://picsum.photos/50/50/?random=1");
+
+			background-repeat: repeat-x;
+		}
+
+		.bg-repeat-y {
+			background-image: url("https://picsum.photos/50/50/?random=1");
+
+			background-repeat: repeat-y;
+		}
+
+
+
+		.bg-img-center {
+			background-image: url("https://picsum.photos/50/50/?random=1");
+			background-size: 50px 50px;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.bg-img-center-color {
+			background-image: url("https://picsum.photos/50/50/?random=1");
+			background-color: #FFFF77;
+			background-size: 50px 50px;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.bg-three {
+			background:
+				url("https://picsum.photos/200/50/?random=1"),
+				url("https://picsum.photos/200/100/?random=1"),
+				url("https://picsum.photos/200/50/?random=1");
+			background-repeat: no-repeat;
+			background-position: left top, left 50px, left bottom;
+		}
+
+		.linear-gradient {
+
+			background-image: linear-gradient(270deg, blue, #000);
+			/*角度XXdeg 方向 to 某方向 某方向*/
+
+			/*background-image: linear-gradient(to right, #000,blue);*/
+
+		}
+
+		.radial-gradient {
+
+			/*設定站點*/
+
+			background-image: radial-gradient(black 0%, white 100%);
+
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td class="bg-color"></td>
+			<td class="bg-img"></td>
+			<td class="bg-img bg-repeat-x"></td>
+		</tr>
+		<tr>
+			<td class="bg-img bg-repeat-y"></td>
+			<td class="bg-img bg-img-center"></td>
+			<td class="bg-img bg-img-center-color"></td>
+		</tr>
+		<tr>
+			<td class="bg-three"></td>
+			<td class="linear-gradient"></td>
+			<td class="radial-gradient"></td>
+		</tr>
+	</table>
+</body>
+
+</html>
